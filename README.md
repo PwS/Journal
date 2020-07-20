@@ -17,7 +17,7 @@ Understanding About Cucumber , Selenium and Capybara
 Cloning
 ```
 git clone https://github.com/PwS/Journal.git
-cd Amazon-SignIn_SignUp
+cd Journal
 ```
 
 Install bundler
