@@ -38,4 +38,4 @@ For Ide RubyMine , Have Button to Running each Feature / Scenario
 1. Run Feature (Shortcut Shift + F10)
 2. Run Feature
 3. Run Scenario
-<img src="RubyMine.png" alt="drawing" width="800"/>
+<img src="RubyMine.PNG" alt="drawing" width="800"/>
