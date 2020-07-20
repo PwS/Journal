@@ -10,7 +10,7 @@ Understanding About Cucumber , Selenium and Capybara
     ├── support 
     │   └── env.rb
     └── step_definitions
-        ├── journal_step.rb
+        └── journal_step.rb
 ```
 
 ## How To Use
