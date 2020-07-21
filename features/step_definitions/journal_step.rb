@@ -45,15 +45,15 @@ end
 #ThisIsHardCode , Must Change Every Success Create Customer xD
 When("I Fill the CustomerName") do
   etCustName = find('#person_display_name')
-  etCustName.send_keys("F")
+  etCustName.send_keys("NewCustomer")
 end
 When("I Fill the CustomerEmail") do
   etCustMail = find('#person_email')
-  etCustMail.send_keys("F@gmail.com")
+  etCustMail.send_keys("NewCustomer@gmail.com")
 end
 When("I Fill the CustomerBillingAddress") do
   etCustBillAddr = find('#person_billing_address')
-  etCustBillAddr.send_keys('F')
+  etCustBillAddr.send_keys('NewCustomer')
 end
 When("I Fill the CustomerPhone") do
   etCustPhone = find('#person_phone')
