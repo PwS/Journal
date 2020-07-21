@@ -46,15 +46,15 @@ end
 #ThisIsHardCode , Must Change Every Success Create Customer xD
 When("I Fill the CustomerName") do
   etCustName = find('#person_display_name')
-  etCustName.send_keys("TEST5")
+  etCustName.send_keys("CREATENEW")
 end
 When("I Fill the CustomerEmail") do
   etCustMail = find('#person_email')
-  etCustMail.send_keys("TEST5@gmail.com")
+  etCustMail.send_keys("CREATENEW@gmail.com")
 end
 When("I Fill the CustomerBillingAddress") do
   etCustBillAddr = find('#person_billing_address')
-  etCustBillAddr.send_keys('TEST5')
+  etCustBillAddr.send_keys('CREATENEW')
 end
 When("I Fill the CustomerPhone") do
   etCustPhone = find('#person_phone')
@@ -110,7 +110,8 @@ When("I Upload the image") do
   upld = find(:xpath,'/html[1]/body[1]/div[2]/div[4]/div[4]/section[1]/div[1]/div[1]/form[1]/div[7]/div[2]/div[1]/div[3]/div[3]/div[1]').click
   sleep 1
   #FilePath
-  upld.attach_file('Images','E:/SQLServer.PNG')
+  upld.send_keys("E:/SQLServer.PNG")
+  btnSaveImg =find(:id , "save").click
 end
 =end
 
