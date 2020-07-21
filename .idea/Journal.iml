@@ -41,6 +41,8 @@
     <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.7.1, ruby-2.5.8-p224) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v2.3.0, ruby-2.5.8-p224) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v3.142.7, ruby-2.5.8-p224) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="site_prism (v3.4.2, ruby-2.5.8-p224) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="site_prism-all_there (v0.3.2, ruby-2.5.8-p224) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="xpath (v3.2.0, ruby-2.5.8-p224) [gem]" level="application" />
   </component>
 </module>
