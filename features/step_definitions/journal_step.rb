@@ -110,8 +110,7 @@ When("I Upload the image") do
   upld = find(:xpath,'/html[1]/body[1]/div[2]/div[4]/div[4]/section[1]/div[1]/div[1]/form[1]/div[7]/div[2]/div[1]/div[3]/div[3]/div[1]').click
   sleep 1
   #FilePath
-  upld.send_keys("E:/SQLServer.PNG")
-  btnSaveImg =find(:id , "save").click
+  upld.attach_file("E:/SQLServer.PNG",visible: false)
 end
 =end
 
