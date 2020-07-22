@@ -20,7 +20,8 @@ Understanding About Cucumber , Selenium and Capybara
         ├── journal_step.rb
         └── page_object
             ├── login_page.rb
-            └── main_page.rb
+            ├── main_page.rb
+            └── register_form_cust.rb
 ```
 
 ## How To Use
