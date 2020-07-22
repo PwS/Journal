@@ -44,24 +44,26 @@ Then("I Will See the Register Form") do
 end
 #ThisIsHardCode , Must Change Every Success Create Customer xD
 When("I Fill the CustomerName") do
-  etCustName = find('#person_display_name')
-  etCustName.send_keys("NewCustomer")
+  @regform = RegisterFormCust.new
+  expect(@regform).to have_etCustName
+  @regform.etCustName.set "NewCustomer"
+
 end
 When("I Fill the CustomerEmail") do
-  etCustMail = find('#person_email')
-  etCustMail.send_keys("NewCustomer@gmail.com")
+  expect(@regform).to have_etCustMail
+  @regform.etCustMail.set "NewCustomer@GMAIL.COM"
 end
 When("I Fill the CustomerBillingAddress") do
-  etCustBillAddr = find('#person_billing_address')
-  etCustBillAddr.send_keys('NewCustomer')
+  expect(@regform).to have_etCustBillAddr
+  @regform.etCustBillAddr.set "NewCustomer"
 end
 When("I Fill the CustomerPhone") do
-  etCustPhone = find('#person_phone')
-  etCustPhone.send_keys('123')
+  expect(@regform).to have_etCustPhone
+  @regform.etCustPhone.set "081254587845"
 end
 When("I Click Save") do
-  btnRegist = find('#aodc-add')
-  btnRegist.click
+  expect(@regform).to have_btnRegistCust
+  @regform.btnRegistCust.click
 end
 Then("I Finish Register New Customer") do
   sleep 2
