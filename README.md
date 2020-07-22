@@ -28,8 +28,8 @@ Understanding About Cucumber , Selenium and Capybara , Site Prism
 ## How To Use
 Cloning
 ```
->git clone https://github.com/PwS/Journal.git
->cd Journal
+> git clone https://github.com/PwS/Journal.git
+> cd Journal
 ```
 
 Install bundler
