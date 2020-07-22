@@ -1,6 +1,13 @@
 # Journal
 Understanding About Cucumber , Selenium and Capybara
 
+## File or Application needed
+* [Visual Studio Code](https://code.visualstudio.com/) - Editor
+* [Chocolatey](https://chocolatey.org/) - Package Manager
+* [Ruby](https://rubyinstaller.org/downloads/) - Language For Logic
+* [ChromeDriver](https://chromedriver.chromium.org/downloads) - Browser Driver
+* [RubyMine](https://www.jetbrains.com/ruby/) - IDE
+
 ## Structure Tree
 ```bash
 ├── Gemfile
@@ -37,7 +44,7 @@ Running
 bundle exec cucumber
 ```
 
-For Ide RubyMine , Have Button to Running each Feature / Scenario
+If Using Ide RubyMine , The IDE Have separated Button to Running each Feature / Scenario
 1. Run Feature (Shortcut Shift + F10)
 2. Run Feature
 3. Run Scenario
