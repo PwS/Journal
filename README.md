@@ -50,3 +50,17 @@ If Using Ide RubyMine , The IDE Have separated Button to Running each Feature / 
 2. Run Feature
 3. Run Scenario
 <img src="RubyMine.PNG" alt="drawing" width="800"/>
+
+
+## Note
+Every Successfully Create New Customer , We Must change the variable input (That's hardcode , so change manualy on code)
+
+```
+--Change Variable etCustName,etCustMail,etCustBillAddr and etCustPhone , between double quote " "
+  @regform.etCustName.set "NewCustomer"
+  @regform.etCustMail.set "NewCustomer@GMAIL.COM"
+  @regform.etCustBillAddr.set "NewCustomer"
+  @regform.etCustPhone.set "081254587845"
+```
+
+
