@@ -53,7 +53,7 @@ If Using IDE RubyMine , The IDE Have separated Button to Running each Feature / 
 
 
 ## Note
-Every Successfully Create New Customer , We Must change the variable input (That's hardcode , so change manualy on code)
+Every Successfully Create New Customer , Change the variable input (That's a hardcode , so change manualy on code)
 
 ```
 --Change Variable etCustName,etCustMail,etCustBillAddr and etCustPhone , between double quote " "
