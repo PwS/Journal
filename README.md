@@ -27,22 +27,22 @@ Understanding About Cucumber , Selenium and Capybara
 ## How To Use
 Cloning
 ```
-git clone https://github.com/PwS/Journal.git
-cd Journal
+>git clone https://github.com/PwS/Journal.git
+>cd Journal
 ```
 
 Install bundler
 ```
-gem install bundler
+>gem install bundler
 ```
 
 Install dependencies Project
 ```
-bundle install
+>bundle install
 ```
 Running
 ```
-bundle exec cucumber
+>bundle exec cucumber
 ```
 
 If Using IDE RubyMine , The IDE Have separated Button to Running each Feature / Scenario
