@@ -2,7 +2,7 @@
 Understanding About Cucumber , Selenium and Capybara
 
 ## File or Application needed
-* [Visual Studio Code](https://code.visualstudio.com/) - Editor
+* [Visual Studio Code](https://code.visualstudio.com/) - Text Editor
 * [Chocolatey](https://chocolatey.org/) - Package Manager
 * [Ruby](https://rubyinstaller.org/downloads/) - Language For Logic
 * [ChromeDriver](https://chromedriver.chromium.org/downloads) - Browser Driver
