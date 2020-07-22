@@ -58,10 +58,12 @@ Every Successfully Create New Customer , Change the variable input (That's a har
 
 ```
 --Change Variable etCustName,etCustMail,etCustBillAddr and etCustPhone , between double quote " "
-  @regform.etCustName.set "NewCustomer"
-  @regform.etCustMail.set "NewCustomer@GMAIL.COM"
-  @regform.etCustBillAddr.set "NewCustomer"
-  @regform.etCustPhone.set "081254587845"
+  Example , Change variable set for etCustname from NewCustomer to CustomerNew
+  
+  @app.regform.etCustName.set "NewCustomer"
+  @app.regform.etCustMail.set "NewCustomer@GMAIL.COM"
+  @app.regform.etCustBillAddr.set "NewCustomer"
+  @app.regform.etCustPhone.set "081254587845"
 ```
 
 
