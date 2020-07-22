@@ -1,5 +1,4 @@
 # Journal
-Understanding About Cucumber , Selenium and Capybara , Site Prism
 
 ## File or Application needed
 * [Visual Studio Code](https://code.visualstudio.com/) - Text Editor
