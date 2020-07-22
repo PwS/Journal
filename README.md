@@ -19,6 +19,7 @@ Understanding About Cucumber , Selenium and Capybara , Site Prism
     └── step_definitions
         ├── journal_step.rb
         └── page_object
+            ├── app.rb 
             ├── login_page.rb
             ├── main_page.rb
             └── register_form_cust.rb
@@ -33,16 +34,16 @@ Cloning
 
 Install bundler
 ```
->gem install bundler
+> gem install bundler
 ```
 
 Install dependencies Project
 ```
->bundle install
+> bundle install
 ```
 Running
 ```
->bundle exec cucumber
+> bundle exec cucumber
 ```
 
 If Using IDE RubyMine , The IDE Have separated Button to Running each Feature / Scenario
