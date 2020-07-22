@@ -1,31 +1,30 @@
 Given('I Visit the Journal Page') do
-  @login = LoginPage.new
-  @login.load
+  @app = App.new
+  @app.loginpage.load
 end
 
 When("I Fill the email with email") do
-  expect(@login).to have_etEmail
-  @login.etEmail.set "pawanasutha02@gmail.com"
+  expect(@app.loginpage).to have_etEmail
+  @app.loginpage.etEmail.set "pawanasutha02@gmail.com"
 end
 
 When("I Fill the password with password") do
-  expect(@login).to have_etPassword
-  @login.etPassword.set "pawanasutha"
+  expect(@app.loginpage).to have_etPassword
+  @app.loginpage.etPassword.set "pawanasutha"
 end
 
 When('I Click button Login\/SignIn') do
-  expect(@login).to have_login_button
-  @login.login_button.click
+  expect(@app.loginpage).to have_login_button
+  @app.loginpage.login_button.click
 end
 
 Then('the page new invoice  will be shown') do
-  @main = MainPage.new
-  @main.load
+  @app.mainpage.load
 end
 
 When("I Click DropDown Customer") do
-  expect(@main).to have_ddCustomer
-  @main.ddCustomer.click
+  expect(@app.mainpage).to have_ddCustomer
+  @app.mainpage.ddCustomer.click
 end
 
 =begin
@@ -35,8 +34,8 @@ end
 =end
 
 And("I Choose Register New One") do
-  expect(@main).to have_ddRegisterCust
-  @main.ddRegisterCust.click
+  expect(@app.mainpage).to have_ddRegisterCust
+  @app.mainpage.ddRegisterCust.click
 end
 
 Then("I Will See the Register Form") do
@@ -44,26 +43,25 @@ Then("I Will See the Register Form") do
 end
 #ThisIsHardCode , Must Change Every Success Create Customer xD
 When("I Fill the CustomerName") do
-  @regform = RegisterFormCust.new
-  expect(@regform).to have_etCustName
-  @regform.etCustName.set "NewCustomer"
+  expect(@app.regform).to have_etCustName
+  @app.regform.etCustName.set "NewCustomer"
 
 end
 When("I Fill the CustomerEmail") do
-  expect(@regform).to have_etCustMail
-  @regform.etCustMail.set "NewCustomer@GMAIL.COM"
+  expect(@app.regform).to have_etCustMail
+  @app.regform.etCustMail.set "NewCustomer@GMAIL.COM"
 end
 When("I Fill the CustomerBillingAddress") do
-  expect(@regform).to have_etCustBillAddr
-  @regform.etCustBillAddr.set "NewCustomer"
+  expect(@app.regform).to have_etCustBillAddr
+  @app.regform.etCustBillAddr.set "NewCustomer"
 end
 When("I Fill the CustomerPhone") do
-  expect(@regform).to have_etCustPhone
-  @regform.etCustPhone.set "081254587845"
+  expect(@app.regform).to have_etCustPhone
+  @app.regform.etCustPhone.set "081254587845"
 end
 When("I Click Save") do
-  expect(@regform).to have_btnRegistCust
-  @regform.btnRegistCust.click
+  expect(@app.regform).to have_btnRegistCust
+  @app.regform.btnRegistCust.click
 end
 Then("I Finish Register New Customer") do
   sleep 2
@@ -88,8 +86,8 @@ When("I Fill the Transcation Date Using Date Picker") do
 end
 
 When("I Click DropDown Product") do
-  expect(@main).to have_ddProduct
-  @main.ddProduct.click
+  expect(@app.mainpage).to have_ddProduct
+  @app.mainpage.ddProduct.click
 end
 
 
@@ -118,8 +116,8 @@ end
 =end
 
 And("I Click Create Button") do
-  expect(@main).to have_btnCreateInv
-  @main.btnCreateInv.click
+  expect(@app.mainpage).to have_btnCreateInv
+  @app.mainpage.btnCreateInv.click
 end
 
 Then("Finish Register Sales Invoice") do
